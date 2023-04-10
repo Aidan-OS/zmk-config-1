@@ -1,3 +1,4 @@
+
 if SHIELD_fine40
 
 config ZMK_KEYBOARD_NAME
@@ -14,26 +15,19 @@ config SSD1306_REVERSE_MODE
 
 if LVGL
 
-config LVGL_HOR_RES_MAX
-	default 128
-
-config LVGL_VER_RES_MAX
+config LV_Z_VDB_SIZE
 	default 64
 
-config LVGL_VDB_SIZE
-	default 64
-
-config LVGL_DPI
+config LV_Z_DPI
 	default 148
 
-config LVGL_BITS_PER_PIXEL
+config LV_Z_BITS_PER_PIXEL
 	default 1
 
-choice LVGL_COLOR_DEPTH
-	default LVGL_COLOR_DEPTH_1
+choice LV_COLOR_DEPTH
+	default LV_COLOR_DEPTH_1
 endchoice
 
 endif # LVGL
 
 endif
-
